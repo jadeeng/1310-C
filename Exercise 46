@@ -1,0 +1,19 @@
+#include <iostream>
+#include<ctime>
+using namespace std;
+using std::time;
+
+int main()
+{
+int randomDie, userInput=0, number=1;
+srand(time(0));
+while(userInput==0){
+    cout<<"The value of die " <<number<<" is "<<1+(rand()%6)<<".\n";
+    cout<<"Press 0 to continue playing and 1 to quit.";
+    cin>>userInput;
+    
+    number++;
+}
+
+    return 0;
+}
