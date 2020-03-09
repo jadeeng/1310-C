@@ -1,16 +1,27 @@
 
 #include <iostream>
 #include<ctime>
+#include <fstream>
 using namespace std;
 using std::time;
 
 int main()
 {
+ifstream in_stream;
+ofstream out_stream;
+    in_stream.open("infile.txt");
+    out_stream.open("outfile.txt");
 int randomDie;
 srand(time(0));
 for (int i=1; i<=2; i++){
     cout<<"The value of die " <<i<<" is "<<1+(rand()%6)<<".\n";
+    in_stream >> first >> second >> third;
+    out_stream << "The sum of the first 3 numbers in infile.txt is "<<(first+second+third)<<endl;
+    
 }
+
+    in_stream.close();
+    out_stream.close();
 
     return 0;
 }
