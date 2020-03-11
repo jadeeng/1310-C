@@ -1,0 +1,21 @@
+#include <stdio.h>      
+
+using namespace std;
+int multiply(int);
+int main ()
+{
+    int x;
+    cout<<"Enter a value to calculate its factorial.";
+    cin>>x;
+    cout<<"running multiply.";
+    cout<<multiply(x);
+  
+}
+int multiply(int value)
+{
+    int factorial;
+    while (value>1){
+        factorial=value*(value-1);
+        value=value-1;
+    }
+}
