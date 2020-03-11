@@ -1,0 +1,25 @@
+
+
+#include <iostream>
+
+using namespace std;
+
+int my_addition(int first, int second);
+int main()
+{
+    int x,y;
+    cout<<"Enter a value.";
+    cin>>x;
+    cout<<"Enter a second value.";
+    cin>>y;
+    cout<<"function call my_addition.";
+   cout<< "The value of your two numbers added together is " << my_addition(x,y);
+   return 0;
+
+}
+int my_addition(int first, int second)
+{
+    return first+second;
+    
+    
+}
