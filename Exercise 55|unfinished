@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int my_addition(int, int);
+int main()
+{
+    int x=1, y=1, count=0, temp;
+    cout<<"function call my_addition.";
+    while (count<10){
+   cout<< my_addition(x,y)<<"\n";
+   temp=x;
+   x=x+y;
+   y=y+
+   count++;
+    }
+   return 0;
+
+}
+int my_addition(int value1, int value2 )
+{
+    return value1+value2;
+    
+    
+}
