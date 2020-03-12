@@ -1,0 +1,27 @@
+#include <stdio.h>      
+#include <iostream>
+#include<math.h>
+using namespace std;
+int reverse(int &full);
+int main ()
+{
+    int full;
+    cout<<"Enter a 5 digit integer.\n";
+    cin>>full;
+    cout<<"The reverse value of your input is "<<reverse(full);
+  return 0;
+}
+int reverse(int &full)
+{
+    int value1, value2, value3, value4, value5, reverseValue;
+    
+    value1= full%10;
+    value2= full%100/10;
+    value3=full%1000/100;
+    value4=full%10000/1000;
+    value5=full%100000/10000;
+    reverseValue=value1*10000+value2*1000+value3*100+value4*10+value5;
+  
+    return reverseValue;
+    
+}
