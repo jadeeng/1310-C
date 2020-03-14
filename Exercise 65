@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int square(int x);
+double square(double x);
+int main()
+{
+    cout << square(3)<<"\n";
+    cout << square(.9);
+}
+int square(int x) {
+    return x * x;
+}
+double square(double x) {
+    return x * x;
+}
