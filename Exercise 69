@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int s(int i);
+int main()
+{
+    cout << s(5) << "\n";
+    return 0;
+}
+int s(int i)
+{
+    if (i == 1)
+        i = 1;
+    else
+        i = i + s(i - 1);
+    cout << i;
+    return i;
+}
