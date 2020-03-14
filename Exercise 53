@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+double totalCost(int, double);
+
+int main()
+{
+    int quantity;
+    double unitPrice, totalPrice;
+
+    cout << "Enter the number you want to purchase.";
+    cin >> quantity;
+    cout << "Enter the value of the item you want to purchase.";
+    cin >> unitPrice;
+    totalPrice = totalCost(quantity, unitPrice);
+    cout << "Total cost is " << totalPrice << ".\n";
+
+
+
+    return 0;
+}
+
+double totalCost(int q, double uP)
+{
+    double totalPrice;
+    totalPrice = q * uP;
+    return totalPrice;
+
+}
