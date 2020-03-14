@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int S(int i);
+int main()
+{
+    cout << S(5);
+}
+int S(int i) {
+    if (i == 1)
+        return 1;
+    else
+        return i*S(i-1);
+}
