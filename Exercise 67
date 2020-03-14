@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int recursiveExp(int);
+int main()
+{
+    recursiveExp(10);
+    return 0;
+}
+int recursiveExp(int i) {
+    cout << i << "\n";
+    if (i == 0)
+        return 0;
+    else
+        return recursiveExp(i - 1);
+}
