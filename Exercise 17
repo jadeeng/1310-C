@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    cout << "Enter your value for 'a'.\n";
+    cin >> a;
+    cout << "Enter your value for 'b'\n";
+    cin >> b;
+    cout << "Enter your value for 'c'\n";
+    cin >> c;
+    if (c>b && c>a && c!=0)
+    
+    {
+        if(a*a+b*b=c*c)
+        {
+            cout << "Your values are correct for a right triangle.\n";
+
+       }
+        else
+        {
+            cout << "Try another set of values. These are not those of a right triangle.\n";
+        }
+    }
+    else
+    {
+        cout << "Your value for c must be larger than your b and c values and be nonzero.\n";
+    }
+    return 0;
+}
