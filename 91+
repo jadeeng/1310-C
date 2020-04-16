@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+void printarray(int[], int);
+
+int main()
+{
+   const int sizeA=10;
+   int arrayA[sizeA]={3,2,5,7,1,8,0,9,10};
+   printarray(arrayA,sizeA);
+    return 0;
+}
+void printarray(int arrayx[], int sizeX)
+{
+    for (int i=0; i<=sizeX-1; i++)
+    cout<<arrayx[i]<<"\n";
+}
+bool linear_search(int arrayx[], int size, int key)
+{bool found=false;
+int current_inx=0;
+cout<<"the key is "<<key<<"\n";
+while 
