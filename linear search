@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+  bool linear_search(int arrayx[], int size, int key); 
+  #define N 10
+int main()
+{
+    int score[N];
+    for (int i=0; i<N;i++)
+    {
+        score[i]=60+rand()%41;
+        cout<< score[i]<<", ";
+    }
+    if (linear_search(score, N, 66)==true)
+    cout<<"\n 66 exists";
+    else 
+    cout<<"\n 66 does not exist.";
+    return 0;
+}
+bool linear_search(int arrayx[], int size, int key)
+{
+    bool found=false;
+    int current_inx=0;
+    int counter=0;
+    cout<<"the key is "<<key<<"\n";
+   // while((found==false) && (current_inx<size))
+   while (current_inx<size)
+    {//cout<<" item "<<current_inx<<" is "<<arrayc[current_inx];
+    if (arrayx[current_inx]==key)
+    {found=true;
+    counter++;}
+    else 
+    current_inx=current_inx+1;
+    }
+    return found;
+    
+}
